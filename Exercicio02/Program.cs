@@ -4,10 +4,13 @@
     {
         static void Main(string[] args)
         {
-            CalculadorTemperatura calculadorTemperatura = new CalculadorTemperatura(10);
-            Console.WriteLine("A temperatura em graus Celsius é: " +
-                              Math.Round(calculadorTemperatura.CalcularTemperaturaCelsius()) + " °C.");
+            
+                Temperatura fah = new Temperatura();
 
-            Console.ReadLine();
+                fah.temperatura = 36;
+
+                Console.WriteLine("A temperatura Fahrenheit é:  " + fah.CalcularTemperatura());
+
+            
         }
-    }
+}
